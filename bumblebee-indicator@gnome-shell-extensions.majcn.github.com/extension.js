@@ -71,7 +71,6 @@ BumblebeeIndicator.prototype = {
     },
 
     _statusChanged: function(monitor, a_file, other_file, event_type) {
-        log('majcn');
         if (event_type == Gio.FileMonitorEvent.CREATED) {
             this._setButtonIcon(true);
         } else if (event_type ==  Gio.FileMonitorEvent.DELETED) {
