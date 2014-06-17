@@ -1,7 +1,7 @@
 #!/bin/sh
 
-EXT_PATH='../bumblebee-indicator@gnome-shell-extensions.meden.github.com'
-ZIP_FILE='bumblebee-indicator@gnome-shell-extensions.meden.github.com.zip'
+EXT_PATH='../bumblebee-indicator@gnome-shell-extensions.majcn.github.com'
+ZIP_FILE='bumblebee-indicator@gnome-shell-extensions.majcn.github.com.zip'
 TOOLS_PATH='../tools'
 
 rm -f ${ZIP_FILE}

@@ -17,29 +17,23 @@
  * MA 02110-1301, USA.
  *
  * Author: Alessio Gaeta <alga777@gmail.com>
+ * Maintainer: Gregor Majcen <majcn.m@gmail.com>
  *
  */
 
-
 const Gio = imports.gi.Gio;
 const St = imports.gi.St;
-
-const MessageTray = imports.ui.messageTray;
 
 function Config() {
     this._init();
 }
 
 Config.prototype = {
-    // FIXME: move in extension configuration
     configFilePath: '/etc/bumblebee/bumblebee.conf',
-
     virtualDisplay: ':8',
 
     _init: function() {
-
-        let configFile = new Gio.File.new_for_path(this.configFilePath);
-
+        let configFile = Gio.File.new_for_path(this.configFilePath);
         let contents = configFile.load_contents(null);
         if (contents[0]) {
             this._parseConfigFile(contents[1]);
@@ -47,9 +41,11 @@ Config.prototype = {
     },
 
     _parseConfigFile: function(contents) {
-        let pattern = /^VirtualDisplay=.*$/m
-        let match = new String(pattern.exec(new String(contents)));
-        this.virtualDisplay = match.substr(16);
+        let pattern = /^VirtualDisplay=:([0-9]$)/m
+        let match = pattern.exec(contents);
+        if (match) {
+            this.virtualDisplay = match[1];
+        }
     }
 
 }
