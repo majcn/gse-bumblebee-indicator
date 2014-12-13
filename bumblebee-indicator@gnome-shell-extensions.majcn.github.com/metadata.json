@@ -1,5 +1,5 @@
 {
-    "shell-version": ["3.6.2", "3.8", "3.10", "3.12", "3.14.1"],
+    "shell-version": ["3.6.2", "3.8", "3.10", "3.12", "3.14"],
     "uuid": "bumblebee-indicator@gnome-shell-extensions.majcn.github.com",
     "name": "Bumblebee Indicator",
     "description": "A Gnome Shell extension that indicates your Nvidia card status while using Bumblebee",
