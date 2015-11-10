@@ -1,8 +1,9 @@
+
 {
-    "shell-version": ["3.6.2", "3.8", "3.10", "3.12", "3.14", "3.16"],
-    "uuid": "bumblebee-indicator@gnome-shell-extensions.majcn.github.com",
+    "shell-version": ["3.6.2", "3.8", "3.10", "3.12", "3.14", "3.16", "3.18"],
+    "uuid": "bumblebee-indicator@gnome-shell-extensions.meden.github.com",
     "name": "Bumblebee Indicator",
     "description": "A Gnome Shell extension that indicates your Nvidia card status while using Bumblebee",
-    "url": "https://github.com/majcn/gse-bumblebee-indicator.git",
-    "version": 6
+    "url": "https://github.com/meden/gse-bumblebee-indicator.git",
+    "version": 5
 }
